@@ -32,6 +32,12 @@ build/
 ### VS Code ###
 .vscode/
 
+#Personal
 application.properties
 src/main/resources/application.properties
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
 
