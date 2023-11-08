@@ -2,15 +2,37 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head th:replace="~{partials/head :: head (title='Todo App')}"></head>
 <body>
-<div class="page-wrapper">
-    <header class="container">
+<div class="page-wrapper justify-center align-center">
+    <!-- background image -->
+    <section class="container background">
+        <img src="/img/bg-desktop-light.jpg" alt="Background">
+    </section>
 
-    </header>
+    <!-- main content -->
+    <main class="container">
+        <!-- title -->
+        <div class="row no-padding">
+            <h1 class="title">TODO</h1>
+        </div>
+
+        <!-- create to do -->
+        <div class="row align-center gap-10 todo-box">
+            <div class="circle"></div>
+            <div class="todo-text">Create a new todo</div>
+        </div>
+
+        <!-- list of to dos -->
+        <div class="row no-padding todo-list">
+            <div class="column">
+
+            </div>
+        </div>
+    </main>
 
     <footer class="container">
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/HunterG7">Hunter G</a>.
         </div>
     </footer>
 </div>

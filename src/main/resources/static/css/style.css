@@ -1,7 +1,82 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;700&family=Nunito+Sans:wght@300&display=swap');
 
+:root {
+    /* PRIMARY */
+    --bright-blue: hsl(220, 98%, 61%);
+    --check-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+    /* LIGHT MODE */
+    --l-very-light-gray: hsl(0, 0%, 98%);
+    --l-very-light-grayish-blue: hsl(236, 33%, 92%);
+    --l-light-grayish-blue: hsl(233, 11%, 84%);
+    --l-dark-grayish-blue: hsl(236, 9%, 61%);
+    --l-very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+    /* DARK MODE */
+    --d-very-dark-blue: hsl(235, 21%, 11%);
+    --d-very-dark-desaturated-blue: hsl(235, 24%, 19%);
+    --d-light-grayish-blue: hsl(234, 39%, 85%);
+    --d-light-grayish-blue-hover: hsl(236, 33%, 92%);
+    --d-dark-grayish-blue: hsl(234, 11%, 52%);
+    --d-very-dark-grayish-blue: hsl(233, 14%, 35%);
+    --d-very-dark-grayish-blue-hover: hsl(237, 14%, 26%);
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+.page-wrapper {
+    position: relative;
 }
 
+/* background */
+.background {
+    height: 33vh;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+.background img {
+    height: inherit;
+    width: inherit;
+}
+
+/* Main Content */
+main.container {
+    z-index: 99;
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 40vw;
+}
+h1.title {
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--l-very-light-gray);
+}
+.todo-box {
+    background-color: var(--l-very-light-gray);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 25%);
+    border-radius: 10px;
+    padding: .25rem .5rem;
+}
+.todo-text {
+    text-align: center;
+}
+.circle {
+    border-radius: 9999px;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 10%);
+}
+
+/* footer */
+footer {
+    bottom: 0;
+}
 .attribution {
     font-size: 11px; text-align: center;
 }
